@@ -1,0 +1,9 @@
+#PBS -N trympi
+#PBS -l nodes=2:ppn=8,walltime=00:00:02
+#PBS -d /users/j817s517/cluster/first
+#PBS -e /users/j817s517/cluster/first/stderr.txt
+#PBS -o /users/j817s517/cluster/first/stdout.txt
+#PBS -M josephstamand@gmail.com
+#!  #PBS -m abe
+
+mpirun -f $PBS_NODEFILE -wdir /nfs/users/j817s517/cluster/first -np 16 ./trympi

@@ -1,0 +1,4 @@
+#PBS -N TEST_MPI
+#PBS -l notes=1:ppn=1,mem=1g
+#PBS -S /bin/sh
+#PBS -o 
