@@ -19,5 +19,5 @@ read org
  if [ "$org" == "n" ]; then
   git remote add origin "$url"
  else
-  git remote set-url origin "$url"
+  git remote set-url origin git://"$url"
  fi
